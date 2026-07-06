@@ -1,6 +1,6 @@
 // Network-first for navigations (fresh app when online), cache fallback for
 // mall dead spots. Bump CACHE on breaking asset changes.
-const CACHE = 'mallnav-v3';
+const CACHE = 'mallnav-v4';
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(['./'])));
